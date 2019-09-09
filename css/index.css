@@ -63,8 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 body {
 	margin: 20px 30px;
 	width: 876px;
@@ -134,3 +132,42 @@ footer {
 	margin-bottom: 100px;
 }
 
+@media(max-width:800px) {
+	body {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	html {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	header nav a {
+		order: 1;
+	}
+
+	header nav {
+		flex-wrap: wrap;
+	}
+
+	header div {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.cta {
+		justify-content: center;
+	}
+
+	.middle-img {
+		width: 100%;
+	}
+
+}
